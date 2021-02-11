@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Phantom Customizer</title>
+<link rel="icon" type="image/png" href="misc_assets/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="misc_assets/favicon-16x16.png" sizes="16x16" />
+<link rel="stylesheet" href="layout.css" type="text/css">
+</head>
+
+<body>
+<img class = "header" src = "misc_assets/title banner.gif" alt = "title"/>
+
+<div class = "container">
+<span class = "intro">
+<p>Welcome to the Phantom Customizer! Mobile users may want to rotate their device.</p>
+</span>
+
+<div class="color_panel_div">
+  <div></div>
+  <div class="color_grid" id = "color_grid_1"></div>
+  <div class="color_grid" id = "color_grid_2"></div>
+</div>
+
+<div class="eye_panel_div">
+  <div> </div> <div></div>
+</div>
+
+<div class="other_panel_div" style = "grid-area:other_panels">
+  <div></div><div></div><div></div>
+</div>
+
+<div class = "phantom_container">
+  <img class="phantom top" id="top" src = "misc_assets/empty.png" alt = "top" style="position:relative"/>
+  <img class="phantom bottom" id="bottom" src = "misc_assets/empty.png" alt = "bottom" style="position:absolute"/>
+  <img class="phantom base" id="base" src = "misc_assets/empty.png" alt = "base" style="position:absolute"/>
+  <img class="phantom eye" id="eye" src = "misc_assets/empty.png" alt = "eye" style="position:absolute"/>
+  <img class="phantom effect" id="effect" src = "misc_assets/empty.png" alt = "effect" style="position:absolute"/>  
+  <img class="phantom watermark" id="watermark" src = "misc_assets/watermark.png" alt = "watermark" style="position:absolute"/> 
+  <canvas class = "phantom_canvas" id="phantom_canvas" width="1000" height="1000"></canvas>
+  <div class="phantom" style="position:absolute; z-index: 80"> </div>
+  <button class="save" id = "save"> </button>
+  <button class="new_tab" id = "new_tab"> </button>
+</div>
+
+<div style = "grid-area:empty"></div>
+</div>
+<div class = "footer2"> Created by <a href="https://aj-item-worth.fandom.com/wiki/User:BrightSunshine" target="_blank">BrightSunshine</a> • Licensed under <a href = "https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC-BY-NC 4.0</a> • Fonts and some assets adapted from the <a href="https://www.animaljamarchives.com/" target="_blank">Animal Jam Archives</a> • Fair-use of copyrighted material from <a href="https://www.wildworks.com/" target="_blank">WildWorks</a></div>
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
