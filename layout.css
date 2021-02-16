@@ -255,6 +255,29 @@ a:hover {
   box-shadow: inset 0 0 0 1000px rgba(255,255,255,.3);
 }
 
+.home {
+  position: fixed;
+  top:3.5%;
+  left:2%;
+  background-image: url("button_assets/home button.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 5vw; 
+  width: 5.25vw;
+  z-index: 200;
+  border:none;
+  background-color:transparent;
+  outline:none;
+}
+
+.home:hover {
+  box-shadow: inset 0 0 0 1000px rgba(255,255,255,.3);
+}
+
+.home:active {
+  box-shadow: inset 0 0 0 1000px rgba(255,255,255,.3);
+}
+
 .footer2 {
   font-size: 0.9vw;
   font-family: DigitalDelivery;
