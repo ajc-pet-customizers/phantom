@@ -257,8 +257,8 @@ a:hover {
 
 .home {
   position: fixed;
-  top:3.5%;
-  left:2%;
+  top:2vw;
+  left:2vw;
   background-image: url("button_assets/home button.png");
   background-repeat: no-repeat;
   background-size: contain;
