@@ -183,7 +183,7 @@ a:hover {
 }
 
 .phantom_container {
-  background-image: url("misc_assets/phantom bg.png");
+  background-image: url("misc_assets/light bg.png");
   background-color: transparent;
   background-size: contain;
   width: 34vw;
