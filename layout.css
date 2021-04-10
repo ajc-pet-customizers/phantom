@@ -207,36 +207,9 @@ a:hover {
 .phantom.effect {z-index: 50;}
 .phantom.watermark {z-index:60;}
 
-.save {
+.button {
   position: absolute;
   top: 26vw;
-  transform: translate(-35%);
-  left: 35%;
-  background-image: url("button_assets/save button.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 5vw; 
-  width: 7.7vw;
-  z-index: 100;
-  border:none;
-  background-color:transparent;
-  outline:none;
-}
-
-.save:hover {
-  box-shadow: inset 0 0 0 1000px rgba(255,255,255,.3);
-}
-
-.save:active {
-  box-shadow: inset 0 0 0 1000px rgba(255,255,255,.3);
-}
-
-.new_tab {
-  position: absolute;
-  top: 26vw;
-  transform: translate(-62%);
-  left: 62%;
-  background-image: url("button_assets/new tab button.png");
   background-repeat: no-repeat;
   background-size: contain;
   height: 5vw; 
@@ -247,35 +220,46 @@ a:hover {
   outline:none;
 }
 
-.new_tab:hover {
+.button:hover {
   box-shadow: inset 0 0 0 1000px rgba(255,255,255,.3);
 }
 
-.new_tab:active {
+.button:active {
   box-shadow: inset 0 0 0 1000px rgba(255,255,255,.3);
 }
 
-.home {
+.button.save {
+  transform: translate(-15%);
+  left: 15%;
+  background-image: url("button_assets/save button.png");
+  height: 5vw; 
+  width: 7.7vw;
+}
+
+.button.new_tab {
+  transform: translate(-42%);
+  left: 42%;
+  background-image: url("button_assets/new tab button.png");
+}
+
+.button.home {
   position: fixed;
   top:2vw;
   left:2vw;
   background-image: url("button_assets/home button.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 5vw; 
-  width: 5.25vw;
   z-index: 200;
-  border:none;
-  background-color:transparent;
-  outline:none;
 }
 
-.home:hover {
-  box-shadow: inset 0 0 0 1000px rgba(255,255,255,.3);
+.button.randomize {
+  transform: translate(-61.5%);
+  left: 61.5%;
+  background-image: url("button_assets/randomize button.png");
 }
 
-.home:active {
-  box-shadow: inset 0 0 0 1000px rgba(255,255,255,.3);
+.button.bg_contrast {
+  transform: translate(-81.5%);
+  left: 81.5%;
+  background-image: url("button_assets/bg contrast button.png");
 }
 
 .footer2 {
