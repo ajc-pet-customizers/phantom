@@ -19,6 +19,37 @@ updateAsset("effect","none");
 
 document.getElementById("save").addEventListener("click", function() { mergeImages("save"); } );
 document.getElementById("new_tab").addEventListener("click", function() { mergeImages("new_tab"); } );
+document.getElementById("randomize").addEventListener("click", function() { randomize(); } );
+document.getElementById("bg_contrast").addEventListener("click", function() { flip_bg(); } );
+light = true;
+
+function randomize() {
+  var randfeatures = [["dark red", "brown","orange","lime","blue","light red","tan","yellow","mint","light blue", "black","white","dark pink","dark green","teal","red orange", "burple","light pink","medium green","cyan"],["round","angry","happy","human","swirl","side"],["flat","round","sharp","stub"], ["flat","round","sharp","stub"],["none","glow","lightning","freckle"]];
+  var randoms = []
+
+  for (var i = 0; i < randfeatures.length; i++) {
+    if (i==0) {
+      randoms.push(randfeatures[i][Math.floor(Math.random()*randfeatures[i].length)])
+    }
+    randoms.push(randfeatures[i][Math.floor(Math.random()*randfeatures[i].length)]);
+  }
+  updateColor(randoms[0]);
+  updateSecondary(randoms[1]);
+  updateAsset("eye",randoms[2]);
+  updateAsset("top","top_"+randoms[3]);
+  updateAsset("bottom","bottom_"+randoms[4]);
+  updateAsset("effect",randoms[5]);
+}
+
+function flip_bg() {
+  if (!light) {
+    document.getElementById("phantom_container").style.backgroundImage = "url('misc_assets/light bg.png'"+")";
+  }
+  else {
+    document.getElementById("phantom_container").style.backgroundImage = "url('misc_assets/dark bg.png'"+")";
+  }
+  light = !light;
+}
 
 function setColorButtons(className) {
 var colorNames = ["dark red", "brown","orange","lime","blue","light red","tan","yellow","mint","light blue", "black","white","dark pink","dark green","teal","red orange", "burple","light pink","medium green","cyan"];
