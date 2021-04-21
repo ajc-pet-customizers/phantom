@@ -12,6 +12,8 @@ Welcome to the Phantom Customizer's GitHub page! This project (website in progre
 * Accurate renditions of phantoms seen in-game
 * Ability to save your phantom as a .png file with transparent background
 * Ability to open the phantom's image in a new tab to look closer
+* Ability to randomly generate a phantom
+* Ability to toggle background color
 
 # Notes
 * Completely safe to use: your personal data is not accessed or stored anywhere and website requires no AJC account information
