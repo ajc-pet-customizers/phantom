@@ -23,6 +23,15 @@ document.getElementById("randomize").addEventListener("click", function() { rand
 document.getElementById("bg_contrast").addEventListener("click", function() { flip_bg(); } );
 light = true;
 
+var myVar;
+function loaded() {
+  myVar = setTimeout(showPage, 2500);
+}
+
+function showPage() {
+  document.getElementById("loading_container").style.display = "none";
+}
+
 function randomize() {
   var randfeatures = [["dark red", "brown","orange","lime","blue","light red","tan","yellow","mint","light blue", "black","white","dark pink","dark green","teal","red orange", "burple","light pink","medium green","cyan"],["round","angry","happy","human","swirl","side"],["flat","round","sharp","stub"], ["flat","round","sharp","stub"],["none","glow","lightning","freckle"]];
   var randoms = []
